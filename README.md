@@ -1,3 +1,3 @@
 # CoffeeCraft
 
-A description of this package.
+A collection of frequently used Swift functions and SwiftUI views
