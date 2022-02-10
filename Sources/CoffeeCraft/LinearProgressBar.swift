@@ -24,15 +24,14 @@ public struct LinearProgressBar: View {
     
     public var body: some View {
         GeometryReader { proxy in
-            ZStack {
+            ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(background)
-                HStack {
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .fill(foreground)
-                        .frame(width: proxy.size.width * value, height: proxy.size.height)
-                    Spacer()
-                }
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+                
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(foreground)
+                    .frame(width: proxy.size.width * value, height: proxy.size.height)
             }
         }
     }
