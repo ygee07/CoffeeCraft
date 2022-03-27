@@ -25,20 +25,25 @@ public struct LinearProgressBar: View {
     public var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: cornerRadius)
+                Rectangle()
                     .fill(background)
-                    .frame(width: proxy.size.width, height: proxy.size.height)
                 
-                RoundedRectangle(cornerRadius: cornerRadius)
+                Rectangle()
                     .fill(foreground)
                     .frame(width: proxy.size.width * value, height: proxy.size.height)
             }
+            .frame(width: proxy.size.width, height: proxy.size.height)
+            .clipShape(
+                RoundedRectangle(cornerRadius: cornerRadius)
+
+            )            
         }
     }
 }
 
 struct LinearProgressBar_Previews: PreviewProvider {
     static var previews: some View {
-        LinearProgressBar(value: 0.5)
+        LinearProgressBar(value: 0.02, cornerRadius: 10)
+            .frame(width: 300, height: 30)
     }
 }
