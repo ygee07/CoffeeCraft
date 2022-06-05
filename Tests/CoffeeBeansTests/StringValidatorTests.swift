@@ -1,5 +1,5 @@
 import XCTest
-@testable import CoffeeCraft
+@testable import CoffeeBeans
 
 final class StringValidatorTests: XCTestCase {
 
