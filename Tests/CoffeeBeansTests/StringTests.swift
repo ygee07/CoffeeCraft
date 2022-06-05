@@ -1,7 +1,7 @@
 import XCTest
 @testable import CoffeeBeans
 
-final class StringValidatorTests: XCTestCase {
+final class StringTests: XCTestCase {
 
     func testStringIsPresent() {
         XCTAssertFalse("".isPresent) // Empty String
