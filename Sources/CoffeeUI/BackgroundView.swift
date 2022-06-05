@@ -9,7 +9,7 @@ public struct BackgroundView<Content: View>: View {
         self.content = content
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack {
             color.edgesIgnoringSafeArea(.all)
             content()
