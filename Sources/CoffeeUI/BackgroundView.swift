@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct BackgroundView<Content: View>: View {
+public struct BackgroundView<Content: View>: View {
     let color: Color
     var content: () -> Content
 
