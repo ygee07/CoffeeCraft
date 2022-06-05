@@ -8,6 +8,7 @@
 import UIKit
 import SwiftUI
 
+/// Additional colors used by the package
 public extension Color {
     
     static var background: Color {
