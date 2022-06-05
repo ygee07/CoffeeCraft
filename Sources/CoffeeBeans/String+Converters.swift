@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     func prettyDecimal() -> String {
         let formatter = NumberFormatter()
