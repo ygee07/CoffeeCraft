@@ -4,7 +4,7 @@ public struct BackgroundView<Content: View>: View {
     let color: Color
     var content: () -> Content
 
-    init(color: Color = .background, @ViewBuilder content: @escaping () -> Content) {
+    public init(color: Color = .background, @ViewBuilder content: @escaping () -> Content) {
         self.color = color
         self.content = content
     }
