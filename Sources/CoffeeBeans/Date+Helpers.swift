@@ -9,6 +9,7 @@ import Foundation
 
 extension Date: ExpressibleByIntegerLiteral {
     
+    /// Initialize a date with an integer format 2022_12_31
     public init(integerLiteral value: Int) {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd"
